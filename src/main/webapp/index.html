@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>oradores</title> 
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="./CSS/bootstrap.css">
+        <link rel="stylesheet" href="./CSS/style.css">
+    </head>
+    <body>
+        <header>
+            <!--Menu-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid" id="menu">
+                    <a class="navbar-brand" href="#">
+                        <img src="./IMG/codoacodo.png" alt="Logo codo a codo" width="120" height="60">
+                        Conf Bs As
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#infoconferencia">La conferencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#oradores">Los oradores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#se-orador">Conviértete en orador</a>
+                            </li>
+                            <form class="d-flex" action="ver_orador" method="get">
+                                <input class="form-control me-2" name="buscar_id" type="text" placeholder="Buscar por ID" >
+                                <button class="btn btn-outline-success" type="submit">MOSTRAR</button>
+                              </form>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+            <section id="infoconferencia">
+                <div class="card text-bg-dark" id="conferencia">
+                    <img src="./IMG/ba1.jpg" class="card-img" id="ba1" alt="imagen de Buenos Aires">
+                    <div class="container">
+                        <div class="card-img-overlay text-end" id="conf">
+                            <h1 class="card-title">Conf Bs As</h1>
+                            <p id="texto-bsas">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra
+                                comunidad el
+                                conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a
+                                conocer a
+                                miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel
+                                que
+                                tenemos
+                                para tí. Te esperamos!
+                            </p>
+                            <a role="button" class="btn btn-outline-light" href="#se-orador">Quiero ser orador</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <section id="oradores">
+            <br>
+            <p class="parrafo"> CONOCE A LOS</p>
+            <h3 class="orador">ORADORES</h3>
+    
+            <!--3 imagenes oradores-->
+            <div class="container">
+                <div class="row cards" id="oradores">
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card">
+                            <img src="./IMG/steve.jpeg" class="card-img-top" alt="Steve Jobs">
+                            <div class="card-body">
+                                <span class="badge text-bg-warning">JavaScript</span>
+                                <span class="badge text-bg-info">React</span>
+                                <h5 class="card-title">Steve Jobs</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+                                    adipisci
+                                    maiores dolore error commodi impedit possimus quidem quam voluptatibus distinctio
+                                    exercitationem
+                                    nam vel aut ratione svgvrev edrbv .</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card">
+                            <img src="./IMG/bill.jpg" class="card-img-top" alt="Bill Gates">
+                            <div class="card-body">
+                                <span class="badge text-bg-warning">JavaScript</span>
+                                <span class="badge text-bg-info">React</span>
+                                <h5 class="card-title">Bill Gates</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa modi
+                                    voluptates,
+                                    officiis repellat suscipit ab sequi quibusdam temporibus, consectetur, sunt corrupti
+                                    placeat
+                                    accusantium minima porro. Deserunt deleniti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card">
+                            <img src="./IMG/ada.jpeg" class="card-img-top" alt="Adda Lovelace">
+                            <div class="card-body">
+                                <span class="badge text-bg-secondary">Negocios</span>
+                                <span class="badge text-bg-danger">Startups</span>
+                                <h5 class="card-title">Ada Lovelace</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia optio
+                                    iusto a
+                                    blanditiis nemo ducimus nesciunt velit laborum eos quod, nostrum corporis dignissimos?
+                                    Nesciunt
+                                    quaerat saepe eius modi voluptatem ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="se-orador">
+            <p class="parrafo"> CONVIÉRTETE EN UN</p>
+            <h3 class="orador">ORADOR</h3>
+            <p class="parrafo">Anótate como orador para dar una <span id="subrayado">charla ignite</span>. Cuéntanos de qué
+                quieres hablar!</p>
+        </section>
+
+        <section>
+            <form action="nuevo_orador" method="post">
+                <div class="row justify-content-center mt-3">
+                    <div class="col-4">
+                        <input type="text" name="nombre" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" name="apellido" class="form-control" placeholder="Apellido"
+                            aria-label="Apellido">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-3">
+                    <div class="col-8">
+                        <input type="text" name="contacto" class="form-control" placeholder="Correo" aria-label="Correo">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-3">
+                    <div class="col-8">
+                        <input name="tema" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Sobre qué quieres hablar?" aria-label="Sobre qué quieres hablar?"></input>
+                    </div>
+                </div>
+
+                <div class="row mb-2">
+                    <div id="boton-formulario" class="d-grid gap-2 col-8 mx-auto">
+                        <input class="btn btn-primary" type="submit" value="Enviar"></input>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+        <footer>
+            <div class="container">
+                <div class="row text-center justify-content-center" id="pie-pagina">
+                    <div class="col">
+                        <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                    </div>
+                    <div class="col">
+                        <a class="nav-link" href="#">Contáctanos</a>
+                    </div>
+                    <div class="col">
+                        <a class="nav-link" href="#">Prensa</a>
+                    </div>
+                    <div class="col">
+                        <a class="nav-link" href="#">Conferencias</a>
+                    </div>
+                    <div class="col">
+                        <a class="nav-link" href="#">Términos y condiciones</a>
+                    </div>
+                    <div class="col">
+                        <a class="nav-link" href="#">Privacidad</a>
+                    </div>
+                    <div class="col">
+                        <a class="nav-link" href="#">Estudiantes</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

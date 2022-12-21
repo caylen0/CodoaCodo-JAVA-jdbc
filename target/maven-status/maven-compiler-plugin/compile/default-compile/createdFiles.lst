@@ -1,0 +1,4 @@
+com\mycompany\web\models\AccionesOrador.class
+com\mycompany\web\servlets\MostrarServlet.class
+com\mycompany\web\models\Orador.class
+com\mycompany\web\servlets\InsertarServlet.class
