@@ -14,8 +14,8 @@ public static int registrar_orador(Orador o){
     int estado = 0;
 
     try {
-        Class.forName("com.mysql.cj.jdbc.Driver"); //OJO!!!EN CADA CONECCION DEBEREMOS CARGAR LA CLASE PRIMERO PARA PODER IDENTIFICAR AL DRIVER Y CONECTARNOS A LA BBDD
-        Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/oradores", "root", "camila");
+        Class.forName("com.mysql.cj.jdbc.Driver"); 
+        Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/oradores", CredencialesBDD.usuario(),CredencialesBDD.contraseña());
 
         String query = "INSERT INTO orador(nombre,apellido,contacto,tema) VALUES (?,?,?,?)";
 
@@ -51,7 +51,7 @@ public static int actualizar_orador(Orador o){
 
     try {
         Class.forName("com.mysql.jdbc.Driver");
-        Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/oradores", "root", "camila");
+        Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/oradores", CredencialesBDD.usuario(),CredencialesBDD.contraseña());
 
         String query = "UPDATE cliente SET nombre=?,apellido=?,contacto=?,tema=? WHERE id=?";
 
@@ -88,7 +88,7 @@ public static Orador obtener_datos_id(int id_a_consultar){
 
     try {
         Class.forName("com.mysql.jdbc.Driver");
-        Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/oradores", "root", "camila");
+        Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/oradores", CredencialesBDD.usuario(),CredencialesBDD.contraseña());
 
         String query = "SELECT id,nombre,apellido,contacto,tema FROM orador WHERE id=?";
 
@@ -121,7 +121,7 @@ public static List<Orador> obtener_todos_los_oradores(){
 
     try {
         Class.forName("com.mysql.jdbc.Driver");
-        Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/oradores", "root", "camila");
+        Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/oradores", CredencialesBDD.usuario(),CredencialesBDD.contraseña());
 
         String query = "SELECT id,nombre,apellido,contacto,tema FROM orador";
 
